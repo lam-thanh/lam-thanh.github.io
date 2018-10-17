@@ -47,11 +47,10 @@ xhr.addEventListener("readystatechange", function () {
 });
 
 xhr.open("POST", "https://script.google.com/macros/s/AKfycbyvME4exGupBz0ClVnkZsfuNycn2Vi6E5jeT6UuhqWyQSyFcinp/exec");
-xhr.setRequestHeader("Content-Type", "application/json");
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 xhr.setRequestHeader("Cache-Control", "no-cache");
-xhr.setRequestHeader("Origin", "*");
 
-xhr.send(data);
+xhr.send("user=test&pwd=test");
       }
     </script>
   </head>
