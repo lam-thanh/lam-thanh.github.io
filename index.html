@@ -9,7 +9,7 @@
       function authn() {
         var xhttp = new XMLHttpRequest();
         xhttp.withCredentials = true;
-        xhttp.open("POST", "https://script.google.com/macros/s/AKfycbyvME4exGupBz0ClVnkZsfuNycn2Vi6E5jeT6UuhqWyQSyFcinp/exec", true);
+        xhttp.open("POST", "https://script.google.com/macros/s/AKfycbyvME4exGupBz0ClVnkZsfuNycn2Vi6E5jeT6UuhqWyQSyFcinp/exec?param=fake", true);
         xhttp.setRequestHeader("Content-type", "application/json");
         xhttp.send(jsonData);
 
