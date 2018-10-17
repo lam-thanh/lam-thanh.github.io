@@ -5,6 +5,7 @@
     <script>
       var data = {user: "test", pwd: "test"};
       var jsonData = JSON.stringify(data);
+      
       function authn() {
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", "https://script.google.com/macros/s/AKfycbyvME4exGupBz0ClVnkZsfuNycn2Vi6E5jeT6UuhqWyQSyFcinp/exec", true);
@@ -25,7 +26,7 @@
       }
     </script>
   </head>
-  <body>
+  <body onLoad="authn();">
     <div id="demo">what do you see?
     </div>
   </body>
