@@ -10,6 +10,7 @@
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", "https://script.google.com/macros/s/AKfycbyvME4exGupBz0ClVnkZsfuNycn2Vi6E5jeT6UuhqWyQSyFcinp/exec", true);
         xhttp.setRequestHeader("Content-type", "application/json");
+        xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
         xhttp.send(jsonData);
 
         xhttp.onreadystatechange = function() {
